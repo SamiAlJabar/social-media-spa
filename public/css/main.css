@@ -1,0 +1,60 @@
+html, body {
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+    background-color: #f1f1f1 !important;
+    font-family: 'Titillium Web', sans-serif !important;
+    color: black !important;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0 !important;
+   width: 100% !important;
+   height: 50px !important;
+   background-color: rgb(221, 221, 221, 0.8);
+   color: #101010;
+   text-align: center;
+   /* box-shadow: 2px 2px 9px #202020; */
+}
+
+#footer-gap {
+    height: 20vh;
+}
+
+.custom-container {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.jumbotron{
+    box-shadow:3px 3px 4px rgba(0,0,0,0.8);
+    border-radius:20px!important;
+    border: 6px double black;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100%;
+    margin-left: 25%;
+    margin-top: 10%;
+    max-width: 50%;
+    background: rgba(355, 355, 355, 1.0) !important;
+}
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 992px) {
+    .jumbotron{
+        height: 100%;
+        margin-left: 15%;
+        margin-top: 100px;
+        max-width: 70%;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    #footer-gap {
+        height: 100vh;
+    }
+}

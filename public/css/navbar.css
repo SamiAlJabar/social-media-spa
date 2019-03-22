@@ -1,0 +1,39 @@
+.navbar {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #0d2e49 !important;
+    box-shadow: 2px 2px 4px #969696;
+}
+
+
+#myNavbar > .menu {
+    padding-left: 100px;
+}
+
+.navbar-nav > li > a {
+    color: white !important;
+}
+
+.dropdown-design:focus {
+    background-color: #0f3757 !important; 
+}
+
+.navbar-toggle:hover {
+    background-color: #0f3757 !important;
+}
+
+.side-text-color {
+    color: black !important;
+}
+
+@media (max-width: 768px) {
+    #myNavbar  {
+        padding-left: 0px;
+        text-align: right;
+        padding-right: 15px;
+    }
+
+    .side-text-color {
+        color: rgb(255, 255, 255) !important;
+    }
+}

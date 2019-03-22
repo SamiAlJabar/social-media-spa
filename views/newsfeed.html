@@ -1,0 +1,46 @@
+﻿<div class="row">
+    <div class="col-md-12">
+        <h2 class="col-md-6" id="welcomeMessage"></h2>
+        <div class="col-md-6">
+            <div style="float: right">
+                <input style="width: 300px;" type="text" id="searchUser" placeholder="Search by username ..." name="search" required>
+                <button id="goButton" class="btn btn-primary" type="button" onclick="searchUserPosts('go');"><i class="fa fa-search"></i></button>
+                <button class="btn btn-primary" type="button" onclick="searchUserPosts('reset');">REFRESH</button>
+            </div>
+        </div>
+    </div>
+    
+    <form class="col-md-12" id="postForm" action="/profilePictureUpload">
+        <div style="margin-top: 3vh;" class="container">
+            <input type="text" placeholder="What's on your mind?" name="message" required>
+            <div style="text-align: right" class="imgUp">
+                <label class="photo-upload">
+                    <input id="realImageName" name="filename" type="file" class="uploadFile img" accept=".png, .jpg, .jpeg" style="width: 0px;height: 0px;overflow: hidden;">
+                    <i class="fa fa-photo"> Photo</i>
+                </label>
+                <button class="btn btn-primary" type="button" onclick="postSubmit();" style="padding: 10px; width: 200px;">Post</button>
+                <br>
+                <div class="imagePreview" hidden="true"></div>
+            </div>
+        </div>
+    </form>
+</div>
+<div style="margin-top: 10vh">
+    <ul style="list-style-type: none;" id="userPosts">
+        <!-- <li style="padding-bottom: 50px; display: inline-block;">
+            <div class="col-md-6">
+                <img style="max-height: 500px;" src="/uploads/default.png" alt="post_image">
+            </div>
+            <div class="col-md-6">
+                <form id="commentForm">
+                    <h4>element.createdBy</h4>
+                    <p>element.createdDate</p>
+                    <h3>element.message</h3>
+                    <input type="text" placeholder="Enter a comment ..." name="comment" required>
+                    <button class="btn btn-primary" type="button" onclick="postComment();" style="padding: 10px; width: 200px;">Post</button>
+                    <button class="btn btn-secondary" type="button" onclick="showComments();" style="padding: 10px; width: 200px;">Comments</button>
+                </form>
+            </div>
+        </li> -->
+    </ul>
+</div>

@@ -1,0 +1,30 @@
+﻿<form id="registrationForm" onsubmit="event.preventDefault(); register();">
+    <!-- <div class="imgcontainer">
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div> -->
+
+<div style="margin-top: 15vh;" class="container">
+    <h1 style="margin-bottom: 40px;"><b>REGISTER</b></h1>
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="username" required>
+    <label for="uname"><b>Country</b></label>
+    <input type="text" placeholder="Enter Country" name="country" required>
+    <br>
+    <br>
+    <label for="uname"><b>Gender</b></label>
+    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+        <div class="radio">
+            <label style="margin-left: 10px;"><input type="radio" value="male" name="gender" required>Male</label>
+            <label style="margin-left: 10px;"><input type="radio" value="female" name="gender" required>Female</label>
+        </div>
+    </div>
+    <br>
+    <br>
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" required>
+    <div style="text-align: right">
+        <button class="btn btn-primary" type="submit" style="padding: 10px; margin-right: 10px; margin-top: 20px; width: 200px;">Done</button>
+        <button class="btn btn-outline-primary" type="button" style="padding: 10px; margin-top: 20px; width: 200px;" onclick="changeMenu('login')">Sign In</button>
+    </div>
+</div>
+</form>
